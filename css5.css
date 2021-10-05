@@ -1,0 +1,215 @@
+body{
+    background-color: yellow;
+}
+
+
+h1{
+    text-align: center;
+    font-weight: bolder;
+}
+
+.first-row{
+    display:flex;
+   justify-content: center;
+   justify-content: space-evenly;
+}
+.second-row{
+   display:flex;
+   justify-content: center;
+   justify-content: space-evenly;
+   position: relative;
+   top: 50px;
+}
+
+.third-row{
+    display:flex;
+   justify-content: center;
+   justify-content: space-evenly;
+   position: relative;
+   top: 110px;
+}
+.fourth-row{
+    display:flex;
+   justify-content: center;
+   justify-content: space-evenly;
+   position: relative;
+   top: 150px;
+}
+
+.box1{
+    border: 2px solid black;
+    background-color: cadetblue;
+    height: 100px;
+    width: 100px;
+    transition: transform 5s ease-in ease-out;
+    animation-name: first;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    /* animation-delay: 15s; */
+}
+
+@keyframes first {
+    0%, 100% {
+        transform: skew(45deg);
+      }
+      50% {
+        transform: skew(-45deg);
+      }
+    }
+.box2{
+        border: 2px solid black;
+        background-color: pink;
+        height: 100px;
+        width: 100px;
+        transition: transform 5s ease-in ease-out;
+        animation-name: second;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        /* animation-delay: 15s; */
+}
+@keyframes second {
+        0%, 100% {
+            transform: skewX(45deg);
+          }
+          50% {
+            transform: skewY(-45deg);
+          }
+        }
+.box3{
+    border: 2px solid black;
+        background-color: skyblue;
+        height: 100px;
+        width: 100px;
+        transition: transform 5s ease-in ease-out;
+        animation-name: third;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+        margin-top: 5%;
+
+}
+@keyframes third {
+     100% {
+        transform: rotate(360deg);
+      }
+      50% {
+        transform: rotate(360deg);
+      }
+    }
+.box4{
+    border: 2px solid black;
+    background-color: cadetblue;
+    height: 100px;
+    width: 100px;
+    margin-top: 5%;
+}
+.b10{
+    transition: transform 5s ease-in ease-out;
+        animation-name: box1;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+        background-color: blue;
+}
+@keyframes box1 {
+    100%{
+        transform: rotateX(60deg);}
+}
+.b11{
+    transition: transform 5s ease-in ease-out;
+        animation-name: box2;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+        background-color: brown;
+}
+@keyframes box2 {
+    100%{
+        transform:skewY(45deg);}
+    50%{
+        transform:skewY(-45deg); 
+    }
+}
+.b12{
+    transition: transform 5s ease-in ease-out;
+        animation-name: box3;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+        background-color:greenyellow;
+}
+@keyframes box3 {
+   0%, 100%{
+        transform:rotate(60deg);}
+    50%{
+        transform:rotate(-60deg); 
+    }
+}
+.link{
+    align-items: center;
+    margin-left: 40%;
+    background-color: red;
+    font-size: 30px;
+  
+}
+.order-list{
+    margin-left: 40%;
+}
+.box{
+    border: 2px solid black;
+    background-color: cadetblue;
+    height: 100px;
+    width: 100px;
+    margin-left: 5%;
+}
+
+.block1{
+    transition: width 6s ease-in;
+}
+.block1:hover{
+    width: 300px;
+}
+.block2{
+    transition: height 6s ease-in;
+    transition: width 6s ease-in;
+}
+.block2:hover{
+    width: 300px;
+    height: 200px;
+}
+.block3{
+    transition: width 6s linear;
+}
+.block3:hover{
+    width: 300px;
+}
+.block4{
+    transition: width 6s ease;
+}
+.block4:hover{
+    width: 300px;
+}
+.block5{
+    transition: width 6s ease-in;
+}
+.block5:hover{
+    width: 300px;
+}
+.block6{
+    transition: width 6s ease-out;
+}
+.block6:hover{
+    width: 300px;
+}
+.block7{
+    transition: width 6s ease-in-out;
+}
+.block7:hover{
+    width: 300px;
+}
+.link1{
+    align-items: center;
+    margin-left: 50%;
+    background-color: red;
+  font-size: 30px;
+}

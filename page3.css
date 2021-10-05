@@ -1,0 +1,134 @@
+.could{
+    background-image:url(./sky.jpg);
+ 
+}
+.head{
+    text-align: center;
+    display: flex;
+    margin-left: 35%;
+    font-size: 25px;
+    font-weight: bolder;
+    
+}
+.happy{
+    background-color: orange;
+}
+.independence{
+    background-color: white;
+    margin-left: 2%;
+}
+.day{
+    background-color: green;
+    margin-left: 2%;
+}
+
+.city{
+    margin-top: 9%;
+    height: 20%;
+    
+   
+}
+.road{
+    height: 50%;
+    position: absolute;
+    top: 70%;
+    animation: way 5s infinite linear;
+   
+
+    
+  
+  }
+
+@keyframes way {
+    100%{
+        transform:translateX(-50%);
+    }
+    
+}
+.car{
+    width: 30%;
+    margin-top:-80%;
+    position: absolute;
+    bottom: 10%;
+    left: 35%;
+   animation: vehicle 1s infinite;
+  
+}
+    @keyframes vehicle {
+     50%{
+         transform: translateY(2px);
+     }
+        
+    }
+
+.wheel{
+    width: 5%;
+    margin-top:-80%;
+    position: absolute;
+    bottom: 11%;
+    left: 38%;
+    animation: tire1 1s infinite linear;
+  
+}
+
+@keyframes tire1 {
+    100%{
+        transform:rotate(360deg)
+    }
+    
+}
+.wheel2{
+    width: 5%;
+    margin-top:-80%;
+    position: absolute;
+    bottom: 11%;
+    left: 56%;
+    animation: tire2 1s infinite linear;
+}
+@keyframes tire2 {
+    100%{
+        transform:rotate(360deg)
+    }
+    
+}
+.flag{
+    height: 25%;
+    width: 50%;
+    margin-top:-80%;
+    position: absolute;
+    bottom: 10%;
+    left: 60%;
+    
+}
+.sun{
+    margin-left:50%;
+    margin-top: -25%;
+    z-index: 5;
+    position: relative;
+    left: 50%;
+    top: 10%;
+    animation: star 10s infinite linear  ;
+}
+@keyframes star {
+    100%{
+        transform: translateX(-50%);
+    }
+}
+.bird{
+    animation: birds 5s infinite linear;
+}
+@keyframes birds {
+    100%{
+        transform: translateX(50%);
+    }
+    
+}
+.link3{
+    text-align: center;
+   margin-left: 50%;
+  position: absolute;
+  bottom: 2%;
+  background-color: greenyellow;
+  font-size: 30px;
+  
+}
